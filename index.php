@@ -6,7 +6,7 @@
     <script type="text/javascript">
          window.onload = () => {
             async function uploadFile(file) {
-                const chunkSize = 1024 * 1024; // 1 MB
+                const chunkSize = 1024 * 1024;
                 const totalChunks = Math.ceil(file.size / chunkSize);
                 
                 for (let currentChunk = 0; currentChunk < totalChunks; currentChunk++) {
